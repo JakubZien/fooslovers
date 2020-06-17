@@ -4,14 +4,34 @@
   box-sizing:border-box;
 }
 
+html{
+  font-size: 100%;
+  overflow-y: scroll;
+}
+
+body{
+  font-size: 20px;
+  line-height: 2em;
+  color: #F3D4CE;
+  font-weight: 300;
+  background-color: #212D40;
+
+}
+body,textarea{
+  font-family: 'Amaranth', verdana,  sans-serif;
+}
+
+/* Start navbar */
 nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #003a55;
+  
   font-family: 'Poppins', sans-serif;
 }
+
+
 
 .logo{
   color: rgb(226, 226, 226);
@@ -26,32 +46,70 @@ nav{
   justify-content: space-around;
 }
 
+
 .nav-links a{
-  color: #b3fdc5;
+  color: #D66853;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 16px;
 }
 
+.nav-links a:hover,
+.nav-links a:focus{
+  color: #F7E2DE;
+}
+
 .nav-links li{
   list-style: none;
-  border-right: 1px solid #b3fdc5;
+  
   padding: 0 22px;
 }
+.contactnav{
+  background: #D66853;
+  border-radius: 2em;
+  filter: blur(0.1) brightness(1.1);
+  transform-style: preserve-3d;
+	transition: all 0.3s ease-out;
+  
+}
+.contactnav:hover
+{
+  filter: brightness(0.9) contrast(1.2);
+   transform: scale(0.96);
+   transition: all 0.2s ease-out;
+   background: #fc3d7c;
+	 background: -moz-linear-gradient(-25deg, #fc3d7c 0%, #f76a34 80%, #f76a34 100%);
+	 background: -webkit-linear-gradient(-25deg, #fc3d7c 0%, #f76a34 80%, #f76a34 100%);
+   background: linear-gradient(-25deg, #fc3d7c 0%, #f76a34 80%, #f76a34 100%);
+   box-shadow: 0 0 2em rgba(white, .3);
+}
+.contactnav:active{
+  filter: brightness(0.75) contrast(1.7);
+}
+.contactnav a{
+  color:rgb(226, 226, 226);
+  text-shadow: 0px 0px 1px #227270;
+}
+
+  
+	
 
 .burger {
   display: none;
   cursor: pointer;
 }
 
+
+
 .burger div{
   width: 25px;
   height: 3px;
-  background-color: #b3fdc5;
+  background-color: #D66853;
   margin: 5px;
   transition: all 0.3s ease;
 }
+
 
 
 
@@ -66,7 +124,7 @@ nav{
      right: 0px;
      height: 92vh;
      top: 8vh;
-     background-color: #003a55;
+     background-color: #212D40;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -107,3 +165,94 @@ nav{
 .toggle .line3{
   transform: rotate(45deg) translate(-5px,-6px);
 }
+
+/* end Navbar */
+/* start Main page */
+.btn{
+  background: #D66853;
+  border-radius: 2em;
+  filter: blur(0.1) brightness(1.1);
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  
+  
+}
+.btn a{
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+}
+.btn:hover
+{
+  filter: brightness(0.9) contrast(1.2);
+   transform: scale(0.96);
+   transition: all 0.2s ease-out;
+   background: #fc3d7c;
+	 background: -moz-linear-gradient(-25deg, #fc3d7c 0%, #f76a34 80%, #f76a34 100%);
+	 background: -webkit-linear-gradient(-25deg, #fc3d7c 0%, #f76a34 80%, #f76a34 100%);
+   background: linear-gradient(-25deg, #fc3d7c 0%, #f76a34 80%, #f76a34 100%);
+   box-shadow: 0 0 2em rgba(white, .3);
+}
+.contactnav:active{
+  filter: brightness(0.75) contrast(1.7);
+
+
+/*.text1{
+font-size: 40px;
+font-weight: bold;
+text-transform: uppercase;
+grid-column: 3 / 5;
+grid-row: 1 / 2;
+padding-left: 25px;
+padding-top: 25px;
+
+}
+.text2{
+  font-size: 60px;
+font-weight: bold;
+text-transform: uppercase;
+grid-column: 2 / 4;
+grid-row: 2 / 3;
+padding-left: 5px;
+}
+.text3{
+  font-size: 60px;
+font-weight: bold;
+text-transform: uppercase;
+grid-column: 3 / 6;
+grid-row: 3 / 4;
+padding-left: 25px;
+}
+.text4{
+  font-size: 100px;
+font-weight: bold;
+text-transform: uppercase;
+grid-column: 1 / 4;
+grid-row: 4 / 5;
+}
+.main{
+  background-image: url('img/foosball-table-2504129.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+.start{
+  display: grid;
+  margin: 10vh 23vw;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1px;
+  height: 21vw;
+  
+}
+.btn{
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}*/
+  
+  
+
+
+
+/* end Main page */
